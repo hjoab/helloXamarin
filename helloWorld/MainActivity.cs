@@ -35,6 +35,9 @@ namespace helloWorld
     [Activity(MainLauncher = true)]  // esto me lo pidio cuando no compiló --hjoab
     public class MainActivity : Activity
     {
+
+        AutoCompleteTextView autoComplete1;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -52,9 +55,6 @@ namespace helloWorld
             radio_Mercedes.Click += onClickRadioButton;
             radio_Lambo.Click += onClickRadioButton;
             radio_Audi.Click += onClickRadioButton;
-
-
-
 
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { button.Text = "Hello world I am your first App"; };
@@ -84,6 +84,15 @@ namespace helloWorld
                     ToastLength.Short).Show();
             };
 
+
+            autoComplete1 = FindViewById<AutoCompleteTextView>(Resource.Id.autoComplete1);
+            Button btn_Submit = FindViewById<Button>(Resource.Id.btn_Submit);
+            var names = new string[] { "John", "Peter", "Jane", "Britney" };
+            ArrayAdapter adapter = new ArrayAdapter<string>(this,
+               Android.Resource.Layout.SimpleSpinnerItem, names);
+            autoComplete1.Adapter = adapter;
+            btn_Submit.Click += ClickedBtnSubmit;
+
         }
 
         private void onClickRadioButton(object sender, EventArgs e)
@@ -91,6 +100,19 @@ namespace helloWorld
             RadioButton cars = (RadioButton)sender;
             Toast.MakeText(this, cars.Text, ToastLength.Short).Show // small message in a pop ---hjoab
             ();
+        }
+
+        protected void ClickedBtnSubmit(object sender, System.EventArgs e)
+        {
+            if (autoComplete1.Text != "")
+            {
+                Toast.MakeText(this, "The Name Entered ="
+                   + autoComplete1.Text, ToastLength.Short).Show();
+            }
+            else
+            {
+                Toast.MakeText(this, "Enter a Name!", ToastLength.Short).Show();
+            }
         }
     }
 }
