@@ -41,6 +41,22 @@ namespace helloWorld
             SetContentView(Resource.Layout.Main);
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { button.Text = "Hello world I am your first App"; };
+
+            CheckBox checkMe = FindViewById<CheckBox>(Resource.Id.checkBox1);
+            checkMe.CheckedChange += (object sender, CompoundButton.CheckedChangeEventArgs e) => {
+                CheckBox check = (CheckBox)sender;
+                if (check.Checked)
+                {
+                    check.Text = "Checkbox has been checked";
+                }
+                else
+                {
+                    check.Text = "Checkbox has not been checked";
+                }
+            };
+
+            ProgressBar pb = FindViewById<ProgressBar>(Resource.Id.progressBar1);
+            pb.Progress = 35;
         }
     }
 }

@@ -19,4 +19,19 @@
       android:layout_height = "wrap_content" 
       android:text = "@string/ButtonClick" />
 
+	<CheckBox 
+      android:text = "CheckBox" 
+      android:padding = "25dp" 
+      android:layout_width = "300dp" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/checkBox1" 
+      android:textColor = "@android:color/black" 
+      android:background = "@android:color/holo_blue_dark" /> 
+
+	<ProgressBar 
+      style="?android:attr/progressBarStyleHorizontal" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/progressBar1" />
+
 </LinearLayout>
