@@ -75,7 +75,14 @@ namespace helloWorld
             ProgressBar pb = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             pb.Progress = 35;
 
-
+            ToggleButton togglebutton = FindViewById<ToggleButton>(Resource.Id.togglebutton);
+            togglebutton.Click += (s, e) => {
+                if (togglebutton.Checked)
+                    Toast.MakeText(this, "Torch is ON", ToastLength.Short).Show();                    
+                else
+                    Toast.MakeText(this, "Torch is OFF",
+                    ToastLength.Short).Show();
+            };
 
         }
 
