@@ -32,13 +32,30 @@ using Android.Support.V7.App;
 //namespace HelloXamarin
 namespace helloWorld
 {
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true)]  // esto me lo pidio cuando no compiló --hjoab
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+
+            RadioButton radio_Ferrari = FindViewById<RadioButton>
+            (Resource.Id.radioFerrari);
+            RadioButton radio_Mercedes = FindViewById<RadioButton>
+            (Resource.Id.radioMercedes);
+            RadioButton radio_Lambo = FindViewById<RadioButton>
+            (Resource.Id.radioLamborghini);
+            RadioButton radio_Audi = FindViewById<RadioButton>
+            (Resource.Id.radioAudi);
+            radio_Ferrari.Click += onClickRadioButton;
+            radio_Mercedes.Click += onClickRadioButton;
+            radio_Lambo.Click += onClickRadioButton;
+            radio_Audi.Click += onClickRadioButton;
+
+
+
+
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { button.Text = "Hello world I am your first App"; };
 
@@ -57,6 +74,16 @@ namespace helloWorld
 
             ProgressBar pb = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             pb.Progress = 35;
+
+
+
+        }
+
+        private void onClickRadioButton(object sender, EventArgs e)
+        {
+            RadioButton cars = (RadioButton)sender;
+            Toast.MakeText(this, cars.Text, ToastLength.Short).Show // small message in a pop ---hjoab
+            ();
         }
     }
 }
