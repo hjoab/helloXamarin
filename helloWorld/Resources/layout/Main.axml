@@ -4,24 +4,25 @@
    android:background = "#d3d3d3" 
    android:layout_width = "fill_parent" 
    android:layout_height = "fill_parent">
-	
+
    <TextView 
       android:text = "@string/HelloXamarin" 
-      android:textAppearance = "?android:attr/textAppearanceLarge" 
+      android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "match_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/textView2" 
-      android:textColor = "@android:color/black" /> 
+      android:textColor = "@android:color/black" />
 
 	<Button 
 	  android:id = "@+id/MyButton" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "fill_parent" 
       android:layout_height = "wrap_content" 
       android:text = "@string/ButtonClick" />
 
 	<TextView 
       android:text = "Enter Name" 
-      android:textAppearance = "?android:attr/textAppearanceMedium" 
+      android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "fill_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/textView3" 
@@ -31,9 +32,11 @@
       android:layout_width = "fill_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/autoComplete1" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:textColor = "@android:color/black" /> 
    <Button 
       android:text = "Submit" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "fill_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/btn_Submit" 
@@ -42,6 +45,7 @@
 
 	<CheckBox
 		android:text = "CheckBox"
+		android:textAppearance = "?android:attr/textAppearanceSmall" 
 		android:padding = "25dp"
 		android:layout_width = "214.0dp"
 		android:layout_height = "wrap_content"
@@ -58,6 +62,7 @@
 
 	<TextView 
       android:text = "What is your favourite Car" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "match_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/textView2" 
@@ -67,6 +72,7 @@
 		android:layout_height = "wrap_content"
 		android:id = "@+id/radioGroup1"
 		android:backgroundTint = "#a52a2aff"
+		android:textAppearance = "?android:attr/textAppearanceSmall" 
 		android:background = "@android:color/holo_green_dark">
 		<RadioButton
 			android:layout_width = "wrap_content"
@@ -92,6 +98,7 @@
 
 	<ToggleButton 
       android:id = "@+id/togglebutton" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
       android:layout_width = "wrap_content" 
       android:layout_height = "wrap_content" 
       android:textOn = "Torch ON" 
@@ -104,19 +111,5 @@
       android:id = "@+id/ratingBar1" 
       android:numStars = "5" 
       android:stepSize = "1.0" /> 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
 </LinearLayout>
