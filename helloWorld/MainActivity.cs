@@ -35,15 +35,18 @@ namespace helloWorld
     [Activity(MainLauncher = true)]  // esto me lo pidio cuando no compiló --hjoab
     public class MainActivity : Activity
     {
+        
+        private AutoCompleteTextView autoComplete1; // see AutoComplete bellow --hjoab
 
-        AutoCompleteTextView autoComplete1;
-
-        private TextView showCurrentDate;
+        private TextView showCurrentDate; // see Date Picker bello --hjoab
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+
+
+            // RadioButton Sample
 
             RadioButton radio_Ferrari = FindViewById<RadioButton>
             (Resource.Id.radioFerrari);
@@ -57,6 +60,8 @@ namespace helloWorld
             radio_Mercedes.Click += onClickRadioButton;
             radio_Lambo.Click += onClickRadioButton;
             radio_Audi.Click += onClickRadioButton;
+
+            // Button Sample
 
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             button.Click += delegate { button.Text = "Hello world I am your first App"; };
@@ -76,6 +81,8 @@ namespace helloWorld
                 }
             };
 
+            // ProgressBar Sample
+
             ProgressBar pb = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             pb.Progress = 35;
 
@@ -88,6 +95,7 @@ namespace helloWorld
                     ToastLength.Short).Show();
             };
 
+            // AutoComplete Sample
 
             autoComplete1 = FindViewById<AutoCompleteTextView>(Resource.Id.autoComplete1);
             Button btn_Submit = FindViewById<Button>(Resource.Id.btn_Submit);
@@ -98,6 +106,8 @@ namespace helloWorld
             btn_Submit.Click += ClickedBtnSubmit;
 
 
+            // DatePicker Sample
+
             DatePicker pickDate = FindViewById<DatePicker>(Resource.Id.datePicker1);
             showCurrentDate = FindViewById<TextView>(Resource.Id.txtShowDate);
             setCurrentDate();
@@ -107,28 +117,30 @@ namespace helloWorld
                    pickDate.Month, pickDate.DayOfMonth, pickDate.Year);
             };
 
-            RatingBar ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar1);
+            // RatingBar Sample
+        
+            var ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar1);
             ratingBar.RatingBarChange += (o, e) =>
             {
                 Toast.MakeText(this, "New Rating: " + ratingBar.Rating.ToString(), ToastLength.Short).Show();
             };
         }
 
-        private void setCurrentDate()
+        private void setCurrentDate() // DatePicker Sample
         {
             string TodaysDate = string.Format("{0}",
                DateTime.Now.ToString("M/d/yyyy").PadLeft(2, '0'));
             showCurrentDate.Text = TodaysDate;
         }
-
-        private void onClickRadioButton(object sender, EventArgs e)
+        
+        private void onClickRadioButton(object sender, EventArgs e) // RadioButton Sample
         {
             RadioButton cars = (RadioButton)sender;
             Toast.MakeText(this,  "Your favorite car is: " + cars.Text, ToastLength.Short).Show // small message in a pop ---hjoab
             ();
         }
 
-        protected void ClickedBtnSubmit(object sender, System.EventArgs e)
+        protected void ClickedBtnSubmit(object sender, System.EventArgs e) // AutoComplete Sample
         {
             if (autoComplete1.Text != "")
             {

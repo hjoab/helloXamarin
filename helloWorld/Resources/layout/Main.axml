@@ -5,7 +5,7 @@
    android:layout_width = "fill_parent" 
    android:layout_height = "fill_parent">
 
-
+<!-- App Name-->
    <TextView 
       android:text = "@string/HelloXamarin" 
       android:textAppearance = "?android:attr/textAppearanceMedium" 
@@ -14,6 +14,7 @@
       android:id = "@+id/textView2" 
       android:textColor = "@android:color/black" />
 
+<!-- Buton Sample-->
 	<Button 
 	  android:id = "@+id/MyButton" 
 	  android:textAppearance = "?android:attr/textAppearanceSmall" 
@@ -21,6 +22,7 @@
       android:layout_height = "wrap_content" 
       android:text = "@string/ButtonClick" />
 
+<!-- AutoComplete Sample-->
 	<TextView 
       android:text = "Enter Name" 
       android:textAppearance = "?android:attr/textAppearanceSmall" 
@@ -43,7 +45,7 @@
       android:id = "@+id/btn_Submit" 
       android:background="@android:color/holo_green_dark" /> 
 
-
+<!-- CheckBox Sample-->
 	<CheckBox
 		android:text = "CheckBox"
 		android:textAppearance = "?android:attr/textAppearanceSmall" 
@@ -54,13 +56,14 @@
 		android:textColor = "@android:color/black"
 		android:background = "@android:color/holo_blue_dark" /> 
 
+<!-- ProgressBar Sample-->
 	<ProgressBar 
       style="?android:attr/progressBarStyleHorizontal" 
       android:layout_width = "match_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/progressBar1" />
 
-
+<!-- RadioButton Sample-->
 	<TextView 
       android:text = "What is your favourite Car" 
 	  android:textAppearance = "?android:attr/textAppearanceSmall" 
@@ -97,6 +100,7 @@
 			android:id = "@+id/radioAudi" />
 	</RadioGroup> 
 
+<!-- Toggle Sample-->
 	<ToggleButton 
       android:id = "@+id/togglebutton" 
 	  android:textAppearance = "?android:attr/textAppearanceSmall" 
@@ -106,6 +110,7 @@
       android:textOff = "Torch OFF" 
       android:textColor = "@android:color/black" /> 
 
+<!-- RatingBar Sample-->
 	<RatingBar 
       android:layout_width = "wrap_content" 
       android:layout_height = "wrap_content" 
@@ -113,6 +118,7 @@
       android:numStars = "5" 
       android:stepSize = "1.0" /> 
 
+<!-- DatePicker Sample-->
 	<DatePicker
 		android:layout_width = "match_parent"
 		android:layout_height = "wrap_content"
