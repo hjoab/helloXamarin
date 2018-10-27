@@ -5,9 +5,10 @@
    android:layout_width = "fill_parent" 
    android:layout_height = "fill_parent">
 
+
    <TextView 
       android:text = "@string/HelloXamarin" 
-      android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:textAppearance = "?android:attr/textAppearanceMedium" 
       android:layout_width = "match_parent" 
       android:layout_height = "wrap_content" 
       android:id = "@+id/textView2" 
@@ -111,5 +112,24 @@
       android:id = "@+id/ratingBar1" 
       android:numStars = "5" 
       android:stepSize = "1.0" /> 
+
+	<DatePicker
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:textAppearance = "?android:attr/textAppearanceSmall"
+		android:id = "@+id/datePicker1"/> 
+   <TextView 
+      android:text = "Current Date" 
+      android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/txtShowDate" /> 
+   <Button 
+      android:text = "Select Date" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall"
+      android:id = "@+id/btnSetDate" /> 
+
 
 </LinearLayout>

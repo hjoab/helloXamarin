@@ -38,6 +38,8 @@ namespace helloWorld
 
         AutoCompleteTextView autoComplete1;
 
+        private TextView showCurrentDate;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -65,10 +67,12 @@ namespace helloWorld
                 if (check.Checked)
                 {
                     check.Text = "Checkbox has been checked";
+                    Toast.MakeText(this, "Checkbox checked!", ToastLength.Short).Show();
                 }
                 else
                 {
                     check.Text = "Checkbox has not been checked";
+                    Toast.MakeText(this, "Checkbox unchecked!", ToastLength.Short).Show();
                 }
             };
 
@@ -93,12 +97,34 @@ namespace helloWorld
             autoComplete1.Adapter = adapter;
             btn_Submit.Click += ClickedBtnSubmit;
 
+
+            DatePicker pickDate = FindViewById<DatePicker>(Resource.Id.datePicker1);
+            showCurrentDate = FindViewById<TextView>(Resource.Id.txtShowDate);
+            setCurrentDate();
+            Button buttonDate = FindViewById<Button>(Resource.Id.btnSetDate);
+            buttonDate.Click += delegate {
+                showCurrentDate.Text = String.Format("{0}/{1}/{2}",
+                   pickDate.Month, pickDate.DayOfMonth, pickDate.Year);
+            };
+
+            RatingBar ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar1);
+            ratingBar.RatingBarChange += (o, e) =>
+            {
+                Toast.MakeText(this, "New Rating: " + ratingBar.Rating.ToString(), ToastLength.Short).Show();
+            };
+        }
+
+        private void setCurrentDate()
+        {
+            string TodaysDate = string.Format("{0}",
+               DateTime.Now.ToString("M/d/yyyy").PadLeft(2, '0'));
+            showCurrentDate.Text = TodaysDate;
         }
 
         private void onClickRadioButton(object sender, EventArgs e)
         {
             RadioButton cars = (RadioButton)sender;
-            Toast.MakeText(this, cars.Text, ToastLength.Short).Show // small message in a pop ---hjoab
+            Toast.MakeText(this,  "Your favorite car is: " + cars.Text, ToastLength.Short).Show // small message in a pop ---hjoab
             ();
         }
 
