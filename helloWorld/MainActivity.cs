@@ -29,10 +29,9 @@ using Android.OS;
 using Android.Support.V7.App;
 
 
-//namespace HelloXamarin
 namespace helloWorld
 {
-    [Activity(MainLauncher = true)]  // esto me lo pidio cuando no compiló --hjoab
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]  // esto me lo pidio cuando no compiló --hjoab
     public class MainActivity : Activity
     {
         
@@ -43,7 +42,9 @@ namespace helloWorld
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
             SetContentView(Resource.Layout.Main);
+            //SetContentView(Resource.Layout.activity_main);
 
 
             // RadioButton Sample

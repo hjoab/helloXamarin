@@ -4,4 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+<!-- App Name-->
+   <TextView 
+      android:text = "@string/HelloXamarin" 
+      android:textAppearance = "?android:attr/textAppearanceMedium" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/textView2" 
+      android:textColor = "@android:color/black" />
+
+<!-- Buton Sample-->
+	<Button 
+	  android:id = "@+id/MyButton" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "fill_parent" 
+      android:layout_height = "wrap_content" 
+      android:text = "@string/ButtonClick" />
+
+<!-- AutoComplete Sample-->
+	<TextView 
+      android:text = "Enter Name" 
+      android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "fill_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/textView3" 
+      android:padding = "5dp" 
+      android:textColor = "@android:color/black" /> 
+   <AutoCompleteTextView 
+      android:layout_width = "fill_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/autoComplete1" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:textColor = "@android:color/black" /> 
+   <Button 
+      android:text = "Submit" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "fill_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/btn_Submit" 
+      android:background="@android:color/holo_green_dark" /> 
+
+<!-- CheckBox Sample-->
+	<CheckBox
+		android:text = "CheckBox"
+		android:textAppearance = "?android:attr/textAppearanceSmall" 
+		android:padding = "25dp"
+		android:layout_width = "214.0dp"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/checkBox1"
+		android:textColor = "@android:color/black"
+		android:background = "@android:color/holo_blue_dark" /> 
+
+<!-- ProgressBar Sample-->
+	<ProgressBar 
+      style="?android:attr/progressBarStyleHorizontal" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/progressBar1" />
+
+<!-- RadioButton Sample-->
+	<TextView 
+      android:text = "What is your favourite Car" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/textView2" 
+      android:textColor = "@android:color/black" />
+	<RadioGroup
+		android:layout_width = "209.5dp"
+		android:layout_height = "wrap_content"
+		android:id = "@+id/radioGroup1"
+		android:backgroundTint = "#a52a2aff"
+		android:textAppearance = "?android:attr/textAppearanceSmall" 
+		android:background = "@android:color/holo_green_dark">
+		<RadioButton
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "Ferrari"
+			android:id = "@+id/radioFerrari" />
+		<RadioButton
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "Mercedes"
+			android:id = "@+id/radioMercedes" />
+		<RadioButton
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "Lamborghini"
+			android:id = "@+id/radioLamborghini" />
+		<RadioButton
+			android:text = "Audi"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/radioAudi" />
+	</RadioGroup> 
+
+<!-- Toggle Sample-->
+	<ToggleButton 
+      android:id = "@+id/togglebutton" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "wrap_content" 
+      android:layout_height = "wrap_content" 
+      android:textOn = "Torch ON" 
+      android:textOff = "Torch OFF" 
+      android:textColor = "@android:color/black" /> 
+
+<!-- RatingBar Sample-->
+	<RatingBar 
+      android:layout_width = "wrap_content" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/ratingBar1" 
+      android:numStars = "5" 
+      android:stepSize = "1.0" /> 
+
+<!-- DatePicker Sample-->
+	<DatePicker
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:textAppearance = "?android:attr/textAppearanceSmall"
+		android:id = "@+id/datePicker1"/> 
+   <TextView 
+      android:text = "Current Date" 
+      android:textAppearance = "?android:attr/textAppearanceSmall" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+      android:id = "@+id/txtShowDate" /> 
+   <Button 
+      android:text = "Select Date" 
+      android:layout_width = "match_parent" 
+      android:layout_height = "wrap_content" 
+	  android:textAppearance = "?android:attr/textAppearanceSmall"
+      android:id = "@+id/btnSetDate" /> 
+
 </RelativeLayout>

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloWorld", "helloWorld\helloWorld.csproj", "{94B78EB0-B9CF-49E8-8CE8-619812C32FD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datePicker", "datePicker\datePicker.csproj", "{79D5E712-52FD-497A-AF72-4BC418F2A7A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timePicker", "TimePicker\timePicker.csproj", "{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,18 @@ Global
 		{94B78EB0-B9CF-49E8-8CE8-619812C32FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B78EB0-B9CF-49E8-8CE8-619812C32FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94B78EB0-B9CF-49E8-8CE8-619812C32FD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D5E712-52FD-497A-AF72-4BC418F2A7A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

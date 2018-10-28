@@ -6,6 +6,5 @@
 <resources>-->
   <string name = "HelloXamarin">Hello World, I am Xamarin 1st Holger app!</string>
   <string name = "ApplicationName">helloWorld</string>
-  
   <string name = "ButtonClick">Click Me!</string>
 </resources>
