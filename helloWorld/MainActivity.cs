@@ -27,7 +27,7 @@ using Android.Views;
 using Android.Widget; 
 using Android.OS;
 using Android.Support.V7.App;
-
+using AlertDialog = Android.Support.V7.App.AlertDialog;
 
 namespace helloWorld
 {
@@ -68,7 +68,8 @@ namespace helloWorld
             button.Click += delegate { button.Text = "Hello world I am your first App"; };
 
             CheckBox checkMe = FindViewById<CheckBox>(Resource.Id.checkBox1);
-            checkMe.CheckedChange += (object sender, CompoundButton.CheckedChangeEventArgs e) => {
+            checkMe.CheckedChange += (object sender, CompoundButton.CheckedChangeEventArgs e) =>
+            {
                 CheckBox check = (CheckBox)sender;
                 if (check.Checked)
                 {
@@ -88,9 +89,10 @@ namespace helloWorld
             pb.Progress = 35;
 
             ToggleButton togglebutton = FindViewById<ToggleButton>(Resource.Id.togglebutton);
-            togglebutton.Click += (s, e) => {
+            togglebutton.Click += (s, e) =>
+            {
                 if (togglebutton.Checked)
-                    Toast.MakeText(this, "Torch is ON", ToastLength.Short).Show();                    
+                    Toast.MakeText(this, "Torch is ON", ToastLength.Short).Show();
                 else
                     Toast.MakeText(this, "Torch is OFF",
                     ToastLength.Short).Show();
@@ -107,31 +109,30 @@ namespace helloWorld
             btn_Submit.Click += ClickedBtnSubmit;
 
 
-            // DatePicker Sample
-
-            DatePicker pickDate = FindViewById<DatePicker>(Resource.Id.datePicker1);
-            showCurrentDate = FindViewById<TextView>(Resource.Id.txtShowDate);
-            setCurrentDate();
-            Button buttonDate = FindViewById<Button>(Resource.Id.btnSetDate);
-            buttonDate.Click += delegate {
-                showCurrentDate.Text = String.Format("{0}/{1}/{2}",
-                   pickDate.Month, pickDate.DayOfMonth, pickDate.Year);
-            };
-
             // RatingBar Sample
-        
+
             var ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar1);
             ratingBar.RatingBarChange += (o, e) =>
             {
                 Toast.MakeText(this, "New Rating: " + ratingBar.Rating.ToString(), ToastLength.Short).Show();
             };
-        }
 
-        private void setCurrentDate() // DatePicker Sample
-        {
-            string TodaysDate = string.Format("{0}",
-               DateTime.Now.ToString("M/d/yyyy").PadLeft(2, '0'));
-            showCurrentDate.Text = TodaysDate;
+            // Alert Dialog Sample
+
+            Button buttonAlert = FindViewById<Button>(Resource.Id.buttonAlert);
+            buttonAlert.Click += delegate {
+                AlertDialog.Builder alertDiag = new AlertDialog.Builder(this);
+                alertDiag.SetTitle("Confirm delete");
+                alertDiag.SetMessage("Once deleted the move cannot be undone");
+                alertDiag.SetPositiveButton("Delete", (senderAlert, args) => {
+                    Toast.MakeText(this, "Deleted", ToastLength.Short).Show();
+                });
+                alertDiag.SetNegativeButton("Cancel", (senderAlert, args) => {
+                    alertDiag.Dispose();
+                });
+                Dialog diag = alertDiag.Create();
+                diag.Show();
+            };
         }
         
         private void onClickRadioButton(object sender, EventArgs e) // RadioButton Sample

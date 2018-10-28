@@ -118,24 +118,14 @@
       android:numStars = "5" 
       android:stepSize = "1.0" /> 
 
-<!-- DatePicker Sample-->
-	<DatePicker
-		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:textAppearance = "?android:attr/textAppearanceSmall"
-		android:id = "@+id/datePicker1"/> 
-   <TextView 
-      android:text = "Current Date" 
-      android:textAppearance = "?android:attr/textAppearanceSmall" 
-      android:layout_width = "match_parent" 
-      android:layout_height = "wrap_content" 
-      android:id = "@+id/txtShowDate" /> 
+<!-- Alert Dialog Sample -->
    <Button 
-      android:text = "Select Date" 
-      android:layout_width = "match_parent" 
-      android:layout_height = "wrap_content" 
+      android:id="@+id/buttonAlert" 
 	  android:textAppearance = "?android:attr/textAppearanceSmall"
-      android:id = "@+id/btnSetDate" /> 
-
+      android:layout_width = "fill_parent" 
+      android:layout_height = "wrap_content" 
+      android:text = "Click to Delete" 
+      android:textColor = "@android:color/background_dark" 
+      android:background = "@android:color/holo_green_dark" /> 
 
 </LinearLayout>
