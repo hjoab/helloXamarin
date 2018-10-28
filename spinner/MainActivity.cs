@@ -18,6 +18,8 @@ namespace spinner
 
             Spinner spinnerDays = FindViewById<Spinner>(Resource.Id.spinner1);
             spinnerDays.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(SelectedDay); // ojo envia un delagado con igual parametros requeiridos ???? -hjoab
+            //spinnerDays.ItemSelected += SelectedDay;  // este tambien sirve --hjoab
+
             var adapter = ArrayAdapter.CreateFromResource(this,
                Resource.Array.days_array, Android.Resource.Layout.SimpleSpinnerItem);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
