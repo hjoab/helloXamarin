@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">datePicker</string>
     <string name="action_settings">Settings</string>
-    <string name = "HelloXamarin">Hello World, I am Xamarin 1st Holger app!</string>
+    <string name = "HelloXamarin">Hello World, I am Xamarin Holger app!</string>
 </resources>

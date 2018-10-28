@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">spinner</string>
+    <string name="action_settings">Settings</string>
+  <string name = "HelloXamarin">Hello World, I am Xamarin Holger app!</string>
+
+  <string name = "daysOfWeek">Choose a planet</string>
+  <string-array name = "days_array">
+    <item>Sunday</item>
+    <item>Monday</item>
+    <item>Tuesday</item>
+    <item>Wednesday</item>
+    <item>Thursday</item>
+    <item>Friday</item>
+    <item>Saturday</item>
+    <item>Sunday</item>
+  </string-array>
+</resources>

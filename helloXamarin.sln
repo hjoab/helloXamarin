@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datePicker", "datePicker\da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timePicker", "TimePicker\timePicker.csproj", "{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spinner", "spinner\spinner.csproj", "{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B2CE1B3-0081-4C50-ACB8-4D4C309C3ED0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
