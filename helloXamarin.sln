@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gallery", "gallery\gallery.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listView", "listView\listView.csproj", "{4DCD2888-14FB-482D-9D3E-7445E952F6AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gridView", "gridView\gridView.csproj", "{D7787066-5765-44B8-A153-1FC3199930D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,12 @@ Global
 		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7787066-5765-44B8-A153-1FC3199930D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
