@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "timePicker", "TimePicker\ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spinner", "spinner\spinner.csproj", "{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gallery", "gallery\gallery.csproj", "{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listView", "listView\listView.csproj", "{4DCD2888-14FB-482D-9D3E-7445E952F6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,18 @@ Global
 		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5DDF9B04-E52A-49D9-AFDF-11CFF8A4B269}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCFC762-CE8B-4C17-9A01-BB4AFB0110C8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCD2888-14FB-482D-9D3E-7445E952F6AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
