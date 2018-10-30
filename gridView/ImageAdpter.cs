@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -46,8 +45,9 @@ namespace gridView
             {
                 imageView = new ImageView(context);
                 imageView.LayoutParameters = new GridView.LayoutParams(100, 100);
-                imageView.SetScaleType(ImageView.ScaleType.CenterCrop);
+                imageView.SetScaleType(ImageView.ScaleType.FitCenter);
                 imageView.SetPadding(8, 8, 8, 8);
+                //imageView.SetPadding(0, 0, 0, 0);
             }
             else
             {
@@ -59,6 +59,15 @@ namespace gridView
         }
 
         int[] cars = {
+            Resource.Drawable.img1, Resource.Drawable.img2,
+            Resource.Drawable.img3, Resource.Drawable.img4,
+            Resource.Drawable.img5, Resource.Drawable.img6,
+            Resource.Drawable.img1, Resource.Drawable.img2,
+            Resource.Drawable.img3, Resource.Drawable.img4,
+            Resource.Drawable.img5, Resource.Drawable.img6,
+            Resource.Drawable.img1, Resource.Drawable.img2,
+            Resource.Drawable.img3, Resource.Drawable.img4,
+            Resource.Drawable.img5, Resource.Drawable.img6,
             Resource.Drawable.img1, Resource.Drawable.img2,
             Resource.Drawable.img3, Resource.Drawable.img4,
             Resource.Drawable.img5, Resource.Drawable.img6,
