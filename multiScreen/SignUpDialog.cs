@@ -77,7 +77,9 @@ namespace multiScreen
            ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
-            var view = inflater.Inflate(Resource.Layout.registerDialog, container, false);
+
+            var view = inflater.Inflate(Resource.Layout.registerDialog, container, false); //  false --hjoab
+
             txtUsername = view.FindViewById<EditText>(Resource.Id.txtUsername);
             txtEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
             txtPassword = view.FindViewById<EditText>(Resource.Id.txtPassword);
@@ -92,6 +94,5 @@ namespace multiScreen
                txtEmail.Text, txtPassword.Text));
             this.Dismiss();
         }
-
     }
 }

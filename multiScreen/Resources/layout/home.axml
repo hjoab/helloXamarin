@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    
+   android:orientation = "vertical" 
+   android:layout_width = "fill_parent" 
+   android:layout_height = "fill_parent" 
+   android:background = "@android:color/background_light" 
+   android:weightSum = "100" 
+   android:minWidth = "25px" 
+   android:minHeight = "25px"> 
 
 <TextView 
-   android:text = "You have been succesfully registered. Welcome!" 
+   android:text = "Home" 
    android:textAppearance = "?android:attr/textAppearanceLarge" 
    android:layout_width = "match_parent" 
    android:layout_height = "wrap_content" 
-   android:id = "@+id/textView1" />
+   android:id = "@+id/textViewHome" />
+<TextView 
+   android:text = "You have been succesfully registered. Welcome!" 
+   android:textAppearance = "?android:attr/textAppearanceMedium" 
+   android:layout_width = "match_parent" 
+   android:layout_height = "wrap_content" 
+   android:id = "@+id/textViewWelcome" />
 
+<TextView 
+   android:text = "user name" 
+   android:textAppearance = "?android:attr/textAppearanceMedium" 
+   android:layout_width = "match_parent" 
+   android:layout_height = "wrap_content" 
+   android:id = "@+id/userName" />
+
+<TextView 
+   android:text = "user Email" 
+   android:textAppearance = "?android:attr/textAppearanceMedium" 
+   android:layout_width = "match_parent" 
+   android:layout_height = "wrap_content" 
+   android:id = "@+id/userEmail" />
 </LinearLayout>

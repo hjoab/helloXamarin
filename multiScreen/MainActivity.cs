@@ -11,12 +11,6 @@ namespace multiScreen
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        //protected override void OnCreate(Bundle savedInstanceState)
-        //{
-        //    base.OnCreate(savedInstanceState);
-        //    // Set our view from the "main" layout resource
-        //    SetContentView(Resource.Layout.Main);
-
         private Button signUp;
         private Button submitNewUser;
         private EditText txtUsername;
@@ -43,7 +37,18 @@ namespace multiScreen
         }
         void diagSignUp_onSignUpComplete(object sender, OnSignUpEvent e)
         {
-            StartActivity(typeof(Activity2));
+            //StartActivity(typeof(SuscessfulRegistration));
+
+            //txtUsername.Text = e.UserName;
+            //txtEmail.Text = e.Email;
+            //txtPassword.Text = e.Password;
+
+            var activity2 = new Android.Content.Intent(this, typeof(SuscessfulRegistration));
+            activity2.PutExtra("userData", "Your Name: " + e.UserName + " Your eMail: " + e.Email);
+            activity2.PutExtra("userName", e.UserName);
+            activity2.PutExtra("userEmail", e.Email);
+
+            StartActivity(activity2);
         }
 
     } 
